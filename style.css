@@ -13,3 +13,15 @@ body {
   align-items: center;
   padding: 20px;
 }
+.game-container {
+  background: #1a1a3a;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  padding: 36px 32px 28px;
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  background-clip: padding-box;
+}
