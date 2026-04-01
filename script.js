@@ -30,3 +30,36 @@ function getResultText(player, computer) {
   }
   return "Computer wins this round!";
 }
+// Update scores and UI
+function updateScore(playerWon) {
+  if (playerWon === true) playerScore++;
+  if (playerWon === false) computerScore++;
+
+  playerScoreEl.textContent = playerScore;
+  computerScoreEl.textContent = computerScore;
+}
+
+// Play one round
+function playRound(playerChoice) {
+  const computerChoice = getRandomChoice();
+  const resultText = getResultText(playerChoice, computerChoice);
+
+  roundResultEl.textContent = `You: ${playerChoice} | Computer: ${computerChoice} — ${resultText}`;
+  statusTextEl.textContent = "Make your move!";
+
+  if (playerChoice === computerChoice) {
+    updateScore(null); // tie
+  } else if (resultText.includes("You win")) {
+    updateScore(true);
+  } else {
+    updateScore(false);
+  }
+}
+
+// Event listeners
+choiceBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const choice = btn.dataset.choice;
+    playRound(choice);
+  });
+});
