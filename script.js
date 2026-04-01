@@ -17,3 +17,16 @@ function getRandomChoice() {
   const index = Math.floor(Math.random() * choices.length);
   return choices[index];
 }
+
+// Helper: get result text
+function getResultText(player, computer) {
+  if (player === computer) return "It's a tie!";
+  if (
+    (player === "rock" && computer === "scissors") ||
+    (player === "paper" && computer === "rock") ||
+    (player === "scissors" && computer === "paper")
+  ) {
+    return "You win this round!";
+  }
+  return "Computer wins this round!";
+}

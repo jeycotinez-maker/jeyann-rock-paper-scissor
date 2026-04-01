@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="jey.css" />
+  </head>
+  <body>
     <main class="game-container">
       <h1 class="game-title">Rock • Paper • Scissors</h1>
 
@@ -20,5 +20,23 @@
           <span id="computer-score" class="score">0</span>
         </div>
       </div>
-</body>
+
+      <p class="status-text" id="status">Make your move!</p>
+
+      <div class="choices">
+        <button class="choice-btn rock" data-choice="rock" aria-label="Choose Rock">
+          🪨 Rock
+        </button>
+        <button class="choice-btn paper" data-choice="paper" aria-label="Choose Paper">
+          📄 Paper
+        </button>
+        <button class="choice-btn scissors" data-choice="scissors" aria-label="Choose Scissors">
+          ✂️ Scissors
+        </button>
+      </div>
+
+      <div class="round-result" id="round-result"></div>
+    </main>
+    <script src="j.js"></script>
+  </body>
 </html>

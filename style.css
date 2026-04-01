@@ -42,3 +42,14 @@ body {
   margin-bottom: 24px;
   gap: 16px;
 }
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(106, 17, 203, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(106, 17, 203, 0.25);
+}
