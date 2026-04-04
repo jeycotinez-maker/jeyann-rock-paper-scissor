@@ -194,6 +194,10 @@ body {
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
 }
 
 .play-again-btn {
@@ -257,6 +261,11 @@ body {
   
   .status-text {
     font-size: 1.2rem;
+  }
+  
+  .round-result {
+    text-align: center;
+    padding: 12px 16px;
   }
 }
 

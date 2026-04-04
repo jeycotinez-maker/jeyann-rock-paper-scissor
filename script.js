@@ -47,7 +47,7 @@ function getComputerChoice() {
 function getRoundResult(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     return {
-      text: `It's a tie! Both chose ${playerChoice}.`,
+      text: `It's a tie! Both chose ${capitalize(playerChoice)}.`,
       winner: null
     };
   }
