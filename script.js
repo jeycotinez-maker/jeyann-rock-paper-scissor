@@ -11,7 +11,7 @@ const scoreItems = document.querySelectorAll(".score-item");
 let playerScore = 0;
 let computerScore = 0;
 let gameActive = true;
-const WINNING_SCORE = 15;
+const WINNING_SCORE = 10;
 
 // Initialize game
 function initGame() {
