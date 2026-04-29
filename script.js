@@ -137,6 +137,14 @@ function endGame() {
   disableChoiceButtons();
 }
 
+// Disable choice buttons
+function disableChoiceButtons() {
+  choiceBtns.forEach(btn => {
+    btn.disabled = true;
+    btn.setAttribute('aria-disabled', 'true');
+  });
+}
+
 // Enable choice buttons
 function enableChoiceButtons() {
   choiceBtns.forEach(btn => {
