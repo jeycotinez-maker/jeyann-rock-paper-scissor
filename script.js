@@ -177,3 +177,15 @@ function playRound(playerChoice) {
   showRoundResult(playerChoice, computerChoice, resultText);
   updateScores(winner);
 }
+
+// Event listeners
+function attachEventListeners() {
+  choiceBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const choice = btn.dataset.choice;
+      playRound(choice);
+    });
+  });
+  
+  playAgainBtn.addEventListener('click', resetGame);
+}
