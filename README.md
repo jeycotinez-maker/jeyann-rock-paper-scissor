@@ -20,3 +20,23 @@ Play against the computer in a fast-paced match — first to **10 points wins**!
 - 📱 Fully responsive (mobile + desktop)
 - ♿ Accessible design (ARIA labels + live updates)
 
+
+
+## 🎮 How to Play
+
+1. Choose your move:
+   - 🪨 Rock
+   - 📄 Paper
+   - ✂️ Scissors
+
+2. The computer will randomly choose its move.
+
+3. Score points based on the rules:
+
+ Move        Beats      
+ Rock 🪨     Scissors ✂️
+ Paper 📄    Rock 🪨    
+ Scissors ✂️ Paper 📄   
+
+4. First to **10 points wins the game** 🏆
+
