@@ -204,3 +204,7 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
   }
 });
+
+
+// Start the game
+initGame();
