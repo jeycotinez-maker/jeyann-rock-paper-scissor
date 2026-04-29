@@ -153,3 +153,16 @@ function enableChoiceButtons() {
   });
 }
 
+// Reset game
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  gameActive = true;
+  
+  statusTextEl.textContent = 'Make your move!';
+  roundResultEl.textContent = '';
+  playAgainBtn.style.display = 'none';
+  
+  updateDisplay();
+  enableChoiceButtons();
+}
