@@ -38,11 +38,11 @@ Play against the computer in a fast-paced match — first to **10 points wins**!
  Paper 📄    Rock 🪨    
  Scissors ✂️ Paper 📄   
 
-4. First to **10 points wins the game** 🏆
+4. First to **10 points wins the game** 
 
 
 
-## ⌨️ Keyboard Controls
+## ⌨ Keyboard Controls
 
 - **R** → Rock 🪨  
 - **P** → Paper 📄  
@@ -50,8 +50,16 @@ Play against the computer in a fast-paced match — first to **10 points wins**!
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - HTML5  
 - CSS3 (Flexbox, Animations, Responsive Design)  
 - JavaScript (DOM Manipulation, Game Logic)
+
+## Project Structure
+
+jeyann-rock-paper-scissor
+ index.html # Game structure
+ style.css # Styling and animations
+ script.js # Game logic
+
