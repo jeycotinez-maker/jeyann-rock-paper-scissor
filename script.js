@@ -136,3 +136,12 @@ function endGame() {
   playAgainBtn.style.display = 'inline-block';
   disableChoiceButtons();
 }
+
+// Enable choice buttons
+function enableChoiceButtons() {
+  choiceBtns.forEach(btn => {
+    btn.disabled = false;
+    btn.removeAttribute('aria-disabled');
+  });
+}
+
