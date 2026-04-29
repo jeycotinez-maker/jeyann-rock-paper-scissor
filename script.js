@@ -51,8 +51,7 @@ function getRoundResult(playerChoice, computerChoice) {
       winner: null
     };
   }
-  
-  const winningCombos = {
+   const winningCombos = {
     rock: 'scissors',
     paper: 'rock',
     scissors: 'paper'
@@ -137,75 +136,3 @@ function endGame() {
   playAgainBtn.style.display = 'inline-block';
   disableChoiceButtons();
 }
-
-// Disable choice buttons
-function disableChoiceButtons() {
-  choiceBtns.forEach(btn => {
-    btn.disabled = true;
-    btn.setAttribute('aria-disabled', 'true');
-  });
-}
-
-// Enable choice buttons
-function enableChoiceButtons() {
-  choiceBtns.forEach(btn => {
-    btn.disabled = false;
-    btn.removeAttribute('aria-disabled');
-  });
-}
-
-// Reset game
-function resetGame() {
-  playerScore = 0;
-  computerScore = 0;
-  gameActive = true;
-  
-  statusTextEl.textContent = 'Make your move!';
-  roundResultEl.textContent = '';
-  playAgainBtn.style.display = 'none';
-  
-  updateDisplay();
-  enableChoiceButtons();
-}
-
-// Play round
-function playRound(playerChoice) {
-  if (!gameActive) return;
-  
-  const computerChoice = getComputerChoice();
-  const { text: resultText, winner } = getRoundResult(playerChoice, computerChoice);
-  
-  showRoundResult(playerChoice, computerChoice, resultText);
-  updateScores(winner);
-}
-
-// Event listeners
-function attachEventListeners() {
-  choiceBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const choice = btn.dataset.choice;
-      playRound(choice);
-    });
-  });
-  
-  playAgainBtn.addEventListener('click', resetGame);
-}
-
-// Keyboard accessibility
-document.addEventListener('keydown', (e) => {
-  if (!gameActive) return;
-  
-  const keyMap = {
-    'r': 'rock',
-    'p': 'paper',
-    's': 'scissors'
-  };
-  
-  if (keyMap[e.key.toLowerCase()]) {
-    playRound(keyMap[e.key.toLowerCase()]);
-    e.preventDefault();
-  }
-});
-
-// Start the game
-initGame();
