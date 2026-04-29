@@ -40,3 +40,18 @@ Play against the computer in a fast-paced match — first to **10 points wins**!
 
 4. First to **10 points wins the game** 🏆
 
+
+
+## ⌨️ Keyboard Controls
+
+- **R** → Rock 🪨  
+- **P** → Paper 📄  
+- **S** → Scissors ✂️  
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5  
+- CSS3 (Flexbox, Animations, Responsive Design)  
+- JavaScript (DOM Manipulation, Game Logic)
