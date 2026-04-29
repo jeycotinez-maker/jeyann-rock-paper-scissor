@@ -166,3 +166,14 @@ function resetGame() {
   updateDisplay();
   enableChoiceButtons();
 }
+
+// Play round
+function playRound(playerChoice) {
+  if (!gameActive) return;
+  
+  const computerChoice = getComputerChoice();
+  const { text: resultText, winner } = getRoundResult(playerChoice, computerChoice);
+  
+  showRoundResult(playerChoice, computerChoice, resultText);
+  updateScores(winner);
+}
