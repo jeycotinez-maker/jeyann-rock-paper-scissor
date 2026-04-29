@@ -189,3 +189,18 @@ function attachEventListeners() {
   
   playAgainBtn.addEventListener('click', resetGame);
 }
+// Keyboard accessibility
+document.addEventListener('keydown', (e) => {
+  if (!gameActive) return;
+  
+  const keyMap = {
+    'r': 'rock',
+    'p': 'paper',
+    's': 'scissors'
+  };
+  
+  if (keyMap[e.key.toLowerCase()]) {
+    playRound(keyMap[e.key.toLowerCase()]);
+    e.preventDefault();
+  }
+});
