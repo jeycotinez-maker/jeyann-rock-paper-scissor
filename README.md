@@ -48,7 +48,6 @@ Play against the computer in a fast-paced match — first to **10 points wins**!
  **P** → Paper 📄  
  **S** → Scissors ✂️  
 
-
 ##  Tech Stack
 
 - HTML5  

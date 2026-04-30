@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #0641e2 0%, #a70f04 100%);
-  color: #f7f1f1;
+  color: #f7f4f5;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,10 +18,10 @@ body {
 
 .game-container {
   background: rgba(26, 26, 58, 0.95);
-  border-radius: 24px;
+  border-radius: 100px;
   box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(255, 255, 255, 0.05);
+    0 20px 40px rgba(3, 222, 238, 0.959),
+    0 0 0 1px rgba(6, 29, 27, 0.952);
   padding: 40px 32px;
   width: 100%;
   max-width: 560px;
