@@ -7,13 +7,12 @@ const playAgainBtn = document.getElementById("play-again");
 const choiceBtns = document.querySelectorAll(".choice-btn");
 const scoreItems = document.querySelectorAll(".score-item");
 
-// Game state
+
 let playerScore = 0;
 let computerScore = 0;
 let gameActive = true;
 const WINNING_SCORE = 10;
 
-// Initialize game
 function initGame() {
   updateDisplay();
   attachEventListeners();
