@@ -18,14 +18,14 @@ function initGame() {
   attachEventListeners();
 }
 
-// Update display elements
+
 function updateDisplay() {
   playerScoreEl.textContent = playerScore;
   computerScoreEl.textContent = computerScore;
   updateScoreVisuals();
 }
 
-// Update score item visuals (highlight leader)
+
 function updateScoreVisuals() {
   scoreItems.forEach(item => item.classList.remove('winner'));
   
@@ -36,7 +36,7 @@ function updateScoreVisuals() {
   }
 }
 
-// Computer choice generator
+
 function getComputerChoice() {
   const choices = ['rock', 'paper', 'scissors'];
   return choices[Math.floor(Math.random() * 3)];
